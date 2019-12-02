@@ -36,7 +36,7 @@ public class ThreadTest {
         public void run() {
             System.out.println(this.getName() + " is running");
             System.out.println(this.getName());
-            System.out.println(Thread.currentThread().getName());
+            System.out.println(this.getName());
         }
     }
 
