@@ -29,8 +29,8 @@ public class UnsafeTest2 {
 
     public static void main(String[] args) {
         UnsafeTest2 unsafeTest2 = new UnsafeTest2();
-        Boolean success = unsafe.compareAndSwapLong(unsafeTest2, stateOffset, 0, 1);
+        Boolean flag = unsafe.compareAndSwapLong(unsafeTest2, stateOffset, 0, 1);
         System.out.println(unsafeTest2.state);
-        System.out.println(success);
+        System.out.println(flag);
     }
 }

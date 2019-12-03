@@ -25,7 +25,7 @@ public class UnsafeTest {
     public static void main(String[] args) {
         UnsafeTest unsafeTest = new UnsafeTest();
 
-        Boolean success = unsafe.compareAndSwapInt(unsafeTest, stateOffset, 0, 1);
-        System.out.println(success);
+        Boolean flag = unsafe.compareAndSwapInt(unsafeTest, stateOffset, 0, 1);
+        System.out.println(flag);
     }
 }
